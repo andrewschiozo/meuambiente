@@ -1,7 +1,5 @@
 package classes;
 
-import persistencia.pRegistro;
-
 public class Registro{
 	
 	private int id;
@@ -37,5 +35,11 @@ public class Registro{
 	public void setProblema(Problema problema) {
 		this.problema = problema;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Registro [\n\tId: " + getId() + "\n \t" + getPessoa() + "\n \t" + getProblema()
+				+ "\n]\n--------------------\n\n";
+	}
+
 }

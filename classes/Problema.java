@@ -41,8 +41,8 @@ public class Problema {
 
 	@Override
 	public String toString() {
-		return "Problema [getId()=" + getId() + ", getDescricao()=" + getDescricao() + ", getSugestaoMelhoria()="
-				+ getSugestaoMelhoria() + "]";
+		return "Problema [\n\tId: " + getId() + "\n\tDescrição: " + getDescricao() + "\n\tProposta de melhoria: "
+				+ getSugestaoMelhoria() + "\n\t]";
 	}
 	
 }

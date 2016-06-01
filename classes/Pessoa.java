@@ -56,9 +56,7 @@ public class Pessoa {
 	
 	@Override
 	public String toString() {
-		return "Pessoa [nome=" + nome + ", dataNascimento=" + dataNascimento + ", cpf=" + cpf + ", getNome()="
-				+ getNome() + ", getDataNascimento()=" + getDataNascimento() + ", getCpf()=" + getCpf() + "]";
+		return "Pessoa [\n\tNome: " + getNome() + "\n\tData Nasc.: " + getDataNascimento() + "\n\tCPF: " + getCpf() + "\n\t]";
 	}
-	
 	
 }
