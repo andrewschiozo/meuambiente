@@ -4,10 +4,10 @@ abstract public interface iPersistencia {
 	
 	abstract public boolean salvar();
 	
-	abstract iPersistencia ler();
+	abstract public String ler();
 	
-	abstract iPersistencia editar();
+	abstract public boolean editar();
 	
-	abstract iPersistencia apagar();
+	abstract public boolean apagar();
 	
 }

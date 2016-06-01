@@ -5,26 +5,26 @@ public class pPessoa implements iPersistencia{
 
 	@Override
 	public boolean salvar() {
-		// TODO Auto-generated method stub
+
 		return true;
 	}
 
 	@Override
-	public iPersistencia ler() {
-		// TODO Auto-generated method stub
-		return null;
+	public String ler() {
+
+		return "";
 	}
 
 	@Override
-	public iPersistencia editar() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean editar() {
+
+		return true;
 	}
 
 	@Override
-	public iPersistencia apagar() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean apagar() {
+
+		return true;
 	}
 
 }
