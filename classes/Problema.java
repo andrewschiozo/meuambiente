@@ -6,17 +6,15 @@ public class Problema {
 	private String descricao;
 	private String sugestaoMelhoria;
 	
-	public Problema(int id, String descricao ){
-		this.setId(id);
+	public Problema(String descricao ){
 		this.setDescricao(descricao);
 	}
 	
-	public Problema(int id, String descricao, String sugestaoMelhoria ){
-		this.setId(id);
+	public Problema(String descricao, String sugestaoMelhoria ){
 		this.setDescricao(descricao);
 		this.setSugestaoMelhoria(sugestaoMelhoria);
 	}
-
+	
 	public int getId() {
 		return id;
 	}
@@ -39,6 +37,12 @@ public class Problema {
 
 	public void setSugestaoMelhoria(String sugestaoMelhoria) {
 		this.sugestaoMelhoria = sugestaoMelhoria;
+	}
+
+	@Override
+	public String toString() {
+		return "Problema [getId()=" + getId() + ", getDescricao()=" + getDescricao() + ", getSugestaoMelhoria()="
+				+ getSugestaoMelhoria() + "]";
 	}
 	
 }
