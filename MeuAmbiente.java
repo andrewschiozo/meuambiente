@@ -8,8 +8,6 @@ import java.text.ParseException;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
-
 
 public class MeuAmbiente {
 
