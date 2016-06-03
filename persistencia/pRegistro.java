@@ -1,19 +1,20 @@
 package persistencia;
+import java.util.ArrayList;
+
 import classes.Registro;
 import interfaces.iPersistencia;
 
 public class pRegistro implements iPersistencia{
-
-	private Registro registro;
+	private ArrayList<Registro> lista = new ArrayList<Registro>();
 	
 	public pRegistro(){}
-		
-	public Registro getRegistro() {
-		return registro;
+	
+	public Object getRegistro(int id) {
+		return lista.get(id);
 	}
 
 	public void setRegistro(Registro registro) {
-		this.registro = registro;
+		this.lista.add(registro);
 	}
 
 	@Override
@@ -21,23 +22,23 @@ public class pRegistro implements iPersistencia{
 		System.out.println("Registro salvo com sucesso");
 		return true;
 	}
-
+	
 	@Override
-	public String ler(int id) {
-		
-		return "";
+	public Object ler(int id) {
+		// TODO Auto-generated method stub
+		return this.getRegistro(id);
 	}
 
 	@Override
-	public boolean editar() {
-
-		return true;
-	}
-
-	@Override
-	public boolean apagar(int id) {
-
-		return true;
+	public String toString() {
+		String retorno = "";
+		for(int i = 0;i<lista.size();i++){  //enquanto i for menor, não maior 
+			retorno += "Registro " + i + "\n";
+			retorno += "---------------------------\n";
+			retorno += lista.get(i); 
+			retorno += "---------------------------\n";
+		}
+		return retorno;
 	}
 
 }
