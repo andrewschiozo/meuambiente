@@ -2,26 +2,23 @@ package classes;
 
 public class Problema {
 	
-	private int id;
+	private Endereco endereco;
 	private String descricao;
 	private String sugestaoMelhoria;
 	
-	public Problema(String descricao ){
+	public Problema(){}
+	
+	public Problema(Endereco cep, String descricao ){
+		this.setEndereco(cep);
 		this.setDescricao(descricao);
 	}
 	
-	public Problema(String descricao, String sugestaoMelhoria ){
+	public Problema(Endereco cep, String descricao, String sugestaoMelhoria ){
+		this.setEndereco(cep);
 		this.setDescricao(descricao);
 		this.setSugestaoMelhoria(sugestaoMelhoria);
 	}
 	
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public String getDescricao() {
 		return descricao;
@@ -38,11 +35,21 @@ public class Problema {
 	public void setSugestaoMelhoria(String sugestaoMelhoria) {
 		this.sugestaoMelhoria = sugestaoMelhoria;
 	}
+	
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
 
 	@Override
 	public String toString() {
-		return "Problema [\n\tId: " + getId() + "\n\tDescrição: " + getDescricao() + "\n\tProposta de melhoria: "
-				+ getSugestaoMelhoria() + "\n\t]";
+		return "Dados do Problema: " + getEndereco() + "\nDescrição: " + getDescricao() + "\nProposta de melhoria: "
+				+ getSugestaoMelhoria() + "\n";
 	}
+
+
 	
 }

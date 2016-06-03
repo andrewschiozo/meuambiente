@@ -2,7 +2,7 @@ package classes;
 
 public class Registro{
 	
-	private int id;
+
 	private Pessoa pessoa;
 	private Problema problema;
 	
@@ -10,14 +10,6 @@ public class Registro{
 		super();
 		this.setPessoa(pessoa);
 		this.setProblema(problema);
-	}
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public Pessoa getPessoa() {
@@ -38,8 +30,7 @@ public class Registro{
 
 	@Override
 	public String toString() {
-		return "Registro [\n\tId: " + getId() + "\n \t" + getPessoa() + "\n \t" + getProblema()
-				+ "\n]\n--------------------\n\n";
+		return getPessoa() + "" + getProblema() + "\n";
 	}
 
 }
