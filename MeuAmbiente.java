@@ -5,8 +5,6 @@ import classes.Registro;
 import persistencia.pRegistro;
 import java.text.ParseException;
 
-import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 
 public class MeuAmbiente {
@@ -57,15 +55,7 @@ public class MeuAmbiente {
 		// Opção de visualizar registros
 		visualizarRegistros = JOptionPane.showConfirmDialog(null, "Deseja visualizar os registros?");
 		if(visualizarRegistros == 0 ){
-			JFrame frame = new JFrame("App");
-			frame.setSize(320, 220);
-			
-			JLabel label = new JLabel();
-			label.setSize(300, 200);
-			label.setText(registros.toString());
-			
-			frame.add(label);
-			frame.setVisible(true);
+			JOptionPane.showMessageDialog(null, registros.toString());
 		}else{
 			JOptionPane.showMessageDialog(null, "Obrigado por utilizar o nosso sistema");
 		}
