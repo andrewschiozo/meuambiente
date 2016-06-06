@@ -46,7 +46,7 @@ public class Problema {
 
 	@Override
 	public String toString() {
-		return "Dados do Problema: " + getEndereco() + "\nDescrição: " + getDescricao() + "\nProposta de melhoria: "
+		return "Dados do Problema:\n " + getEndereco() + "\nDescrição: " + getDescricao() + "\nProposta de melhoria: "
 				+ getSugestaoMelhoria() + "\n";
 	}
 

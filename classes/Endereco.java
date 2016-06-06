@@ -18,7 +18,7 @@ public class Endereco {
 
 	@Override
 	public String toString() {
-		return "Cep da ocorrência: " + getCep() + "\n";
+		return "Cep da ocorrência: " + getCep();
 	}
 	
 	
